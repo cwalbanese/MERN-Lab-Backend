@@ -10,7 +10,9 @@ const ContactSchema = new mongoose.Schema({
     state: String,
     zipcode: Number
   },
-  imageUrl: String
+  imageUrl: String,
+  title: String,
+  note: String
 });
 
 const Contact = mongoose.model('Contact', ContactSchema);
