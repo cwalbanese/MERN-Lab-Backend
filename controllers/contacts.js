@@ -7,7 +7,7 @@ router.get('/contacts', (req, res) => {
 });
 
 router.get('/contacts/:id', (req, res) => {
-  Contact.find({ _id: req.params.id }).then(contact => res.json(contact));
+  Contact.findOne({ _id: req.params.id }).then(contact => res.json(contact));
 });
 
 router.post('/contacts', (req, res) => {
