@@ -2,13 +2,13 @@ const mongoose = require('../db/connection');
 
 const ContactSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  phone: Number,
+  phone: String,
   email: String,
   address: {
     street: String,
     city: String,
     state: String,
-    zipcode: Number
+    zipcode: String
   },
   imageUrl: String,
   title: String,
